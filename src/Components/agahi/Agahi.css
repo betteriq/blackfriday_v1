@@ -1,0 +1,26 @@
+.agahi {
+  background-color: var(--ghermerz);
+  position: fixed;
+  /* position: static;      chera moghe style dehi mipare ba click*/
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 2s;
+  width: 100%;
+  /*chera inja 100% kar kard*/
+}
+.agahi_main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+}
+.agahi_main button {
+  color: #ffffff;
+  background: none;
+  border: none;
+  cursor: pointer;
+  
+  font-size: 18px;
+}

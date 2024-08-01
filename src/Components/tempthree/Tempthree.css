@@ -1,0 +1,40 @@
+.tempthree {
+  background: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.tempthree h3 {
+  font-family: var(--kaj);
+  /* color: var(--ghermez); */
+  font-size: 2em;
+  color: #ff4955;
+  margin-bottom: 0;
+}
+.tempthree h4 {
+  color: #ffffff;
+  font-size: 3em;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+}
+.tempthree_boxes {
+  display: flex;
+  /* justify-content: space-around; */
+  align-items: center;
+  background: white;
+  flex-direction: row;
+  width: 100%;
+}
+.tempthree_boxes section {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  background-color: blue;
+}
+
+.tempthree_boxes section img {
+  width: 50%;
+}
