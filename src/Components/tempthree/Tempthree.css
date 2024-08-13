@@ -1,16 +1,18 @@
 .tempthree {
-  background: #000;
+  background: inherit;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 100vw;
   align-items: center;
+  height: 100vh;
 }
 .tempthree h3 {
   font-family: var(--kaj);
   /* color: var(--ghermez); */
   font-size: 2em;
   color: #ff4955;
-  margin-bottom: 0;
+  margin-bottom: 20px;
 }
 .tempthree h4 {
   color: #ffffff;
@@ -18,23 +20,41 @@
   text-transform: uppercase;
   margin: 0;
   padding: 0;
+  margin-bottom: 10px;
 }
 .tempthree_boxes {
   display: flex;
   /* justify-content: space-around; */
   align-items: center;
-  background: white;
+  background: yellow;
   flex-direction: row;
-  width: 100%;
+  width: 80%;
 }
 .tempthree_boxes section {
   display: flex;
-  width: 100%;
+  width: 30%;
   justify-content: space-around;
   align-items: center;
-  background-color: blue;
+  flex-direction: column;
+  background-color: #000;
 }
 
 .tempthree_boxes section img {
-  width: 50%;
+  width: 90%;
+  border-radius: 10px;
+}
+.tempthree_boxes h3 {
+  font-family: "League Gothic", sans-serif;
+  color: #ffffff;
+}
+.tempthree_boxes p {
+  font-family: "League Gothic", sans-serif;
+  color: #ffffff;
+}
+.stars {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: #ff4955;
 }

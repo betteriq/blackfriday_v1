@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Home.css";
 import Boxes from "../boxes/Boxes";
 import Agahi from "../agahi/Agahi";
@@ -7,7 +7,6 @@ import Temptwo from "../temp_two/Temptwo";
 import Tempthree from "../tempthree/Tempthree";
 import Tempfour from "../tempfour/Tempfour";
 import Temp_five from "../temp_five";
-
 import lolo from "../../assets/Images/1.jpg";
 const data = {
   one: {
@@ -16,18 +15,19 @@ const data = {
 };
 const jami = "sdsds";
 function Home() {
+  const [pic, setPic] = useState();
+  useEffect(() => {
+    fetch("./datas.json")
+      .then((res) => res.json())
+      .then((data) => {
+        setPic(data.laptop.img);
+      })
+      .catch((error) => console.error("errrrrroe"));
+  },[]);
   return (
     <>
       <div className="home">
-        <div className="home_l1">
-          <div className="home_l2">
-            <h3>Hurry, Black Friday is Almost Here!</h3>
-            <h1>
-              <span>Time Left Until Our </span>Biggest Sale of the Year Begins
-            </h1>
-            <button className="btn">set reminder</button>
-          </div>
-        </div>
+        <img src={lolo} alt="" />
       </div>
       <Boxes duration={2 * 24 * 60 * 60 * 1000} />
       <Agahi />

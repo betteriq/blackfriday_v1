@@ -1,0 +1,49 @@
+.about {
+  /* background: url("../../../assets/Images/bg-01-b.jpg");
+  background-position: center;
+  background-size: cover; */
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* height: 70vh; */
+  /* position: relative; */
+  /* top: -10px; */
+}
+.about_tpone {
+  font-family: "League Gothic", sans-serif;
+  font-size: 6em;
+  background: url("../../../assets/Images/bg-01-b.jpg") no-repeat center center;
+  color: #fffcff;
+  /* position: absolute; */
+  /* top: 0;
+  left: 0; */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about_tpone_index {
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about_tptwo {
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+}
+.about_tptwo_index {
+  background: url("../../../assets/Images/about-02.jpg") center center;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 80vw;
+  height: 70vh;
+  margin-bottom: 90px;
+}

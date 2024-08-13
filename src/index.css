@@ -2,4 +2,7 @@ body {
   /* position: relative; */
   /* top: 0; */
   /* background-color: aqua; */
+  overflow-x: hidden;
+  box-sizing: border-box;
+
 }

@@ -1,0 +1,66 @@
+[
+  {
+    "id": 1,
+    "title": "AeroSync Elite Laptops",
+    "img": "../src/assets/Images/1.jpg",
+    "daste": "Laptops",
+    "price": "$475",
+    "description": "These notebooks redefine the boundaries of what’s possible with cutting-edge technology and seamless design. They offer a quantum leap in computing, delivering power and elegance in one. Meticulously crafted to inspire creativity and productivity, they invite you to unleash your potential with top-tier performance."
+  },
+  {
+    "id": 2,
+    "title": "LuminaShot Camera",
+    "img": "../src/assets/Images/2.jpg",
+    "daste": "Cameras",
+    "price": "$225",
+    "description": "Our cameras are designed to capture life’s moments with precision and style. They combine cutting-edge technology with intuitive design, making them the ideal tools for both amateur photographers and professionals. With a commitment to quality and a focus on performance, our cameras empower you to bring your creative vision to life."
+  },
+  {
+    "id": 3,
+    "title": "CamElite Visionaries",
+    "img": "../src/assets/Images/3.jpg",
+    "daste": "Camera",
+    "price": "$359",
+    "description": "Our cameras are designed to capture life’s moments with precision and style. They combine cutting-edge technology with intuitive design, making them the ideal tools for both amateur photographers and professionals. With a commitment to quality and a focus on performance, our cameras empower you to bring your creative vision to life."
+  },
+  {
+    "id": 4,
+    "title": "EchoPulse SoundGear",
+    "img": "../src/assets/Images/4.jpg",
+    "daste": "Headphones",
+    "price": "$99",
+    "description": "Our headphones are meticulously crafted to deliver a superior listening experience. With a perfect harmony of design and sound quality, these headsets elevate your music and entertainment, ensuring every note and beat is crystal clear. Whether you’re an audiophile or a casual listener, our range of headphones offers the perfect blend of style and performance."
+  },
+  {
+    "id": 5,
+    "title": "EvoTech Mobile",
+    "img": "../src/assets/Images/5.jpg",
+    "daste": "Smartphones",
+    "price": "$99",
+    "description": "Our smartphones are crafted to seamlessly blend technology and style, offering you a sophisticated and intuitive mobile experience. With a commitment to quality and cutting-edge features, our devices empower you to stay connected, capture memories, and express your individuality."
+  },
+  {
+    "id": 6,
+    "title": "FusionFocus Imaging",
+    "img": "../src/assets/Images/6.jpg",
+    "daste": "Cameras",
+    "price": "",
+    "description": "Our cameras are designed to capture life’s moments with precision and style. They combine cutting-edge technology with intuitive design, making them the ideal tools for both amateur photographers and professionals. With a commitment to quality and a focus on performance, our cameras empower you to bring your creative vision to life."
+  },
+  {
+    "id": 7,
+    "title": "LuminaShot Camera",
+    "img": "../src/assets/Images/7.jpg",
+    "daste": "laptops",
+    "price": "",
+    "description": "Our cameras are designed to capture life’s moments with precision and style. They combine cutting-edge technology with intuitive design, making them the ideal tools for both amateur photographers and professionals. With a commitment to quality and a focus on performance, our cameras empower you to bring your creative vision to life."
+  },
+  {
+    "id": 8,
+    "title": "AudioSculpt Elite",
+    "img": "../src/assets/Images/8.jpg",
+    "daste": "Headphones",
+    "price": "$255",
+    "description": "Our headphones are meticulously crafted to deliver a superior listening experience. With a perfect harmony of design and sound quality, these headsets elevate your music and entertainment, ensuring every note and beat is crystal clear. Whether you’re an audiophile or a casual listener, our range of headphones offers the perfect blend of style and performance."
+  }
+]

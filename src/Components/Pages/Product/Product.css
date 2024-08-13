@@ -1,0 +1,91 @@
+.product {
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  color: aliceblue;
+  flex-direction: row;
+  flex-wrap: wrap;
+  letter-spacing: 1px;
+  height: 100vh;
+  font-size: 1.25em;
+}
+.product_main {
+  display: flex;
+  justify-content: space-around;
+}
+.main_one {
+  width: 40%;
+  height: 60vh;
+  background-color: beige;
+  text-size-adjust: 100%;
+}
+.main_one img {
+  width: 100%;
+  height: 80vh;
+}
+.main_two {
+  width: 50%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+}
+.main_two_p_one section:nth-child(1) {
+  color: rgb(252, 55, 70);
+}
+.main_two_p_one h1:nth-child(2) {
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  font-family: "League Gothic", sans-serif;
+  font-weight: 400;
+  font-size: 45px;
+  vertical-align: baseline;
+}
+.main_two_p_one :nth-child(3) {
+  font-size: 21px;
+  color: brown;
+  color: rgb(255, 255, 255);
+}
+.main_two_p_one p:nth-child(4) {
+  font-family: "Manrope", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.81);
+  letter-spacing: 1px;
+  line-height: 24.0768px;
+  width: 90%;
+  font-family: "Manrope", sans-serif;
+}
+.main_two_p_one {
+  /* background-color: blueviolet; */
+  border-bottom: 1px solid white;
+  height: auto;
+  margin-bottom: 10px;
+  padding-bottom: 30px;
+}
+.main_two_p_two {
+  height: auto;
+  /* background-color: aqua; */
+  color: rgba(255, 255, 255, 0.81);
+  display: flex;
+  flex-direction: column;
+  float: left;
+  justify-content: left;
+  align-items: start;
+}
+.main_two_p_two section:nth-child(1) {
+  font-size: 13px;
+}
+.main_two_p_two p:nth-child(2) {
+  font-size: 14px;
+  font-family: "Manrope", sans-serif;
+  color: rgba(255, 255, 255, 0.81);
+  font-weight: 600;
+}
+.main_two_p_two li:nth-child(1) {
+  line-height: 24px;
+}
+.main_two_p_two ul {
+  list-style-type: none;
+}

@@ -1,9 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=League+Gothic&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=League+Gothic&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=League+Gothic&family=Manrope:wght@200..800&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Manrope:wght@200..800&display=swap");
 :root {
   --ghermerz: #ff4955;
+  --sooarti: rgb(255, 73, 85);
+  /* rgb(252, 55, 70) soorati  rgb(255, 73, 85) */
   --kaj: "Kaushan Script";
 }
 .btn {
@@ -13,4 +15,9 @@
   border: none;
   color: #ffffff;
   text-transform: uppercase;
+}
+
+.container {
+  height: max-content;
+  width: 100vw;
 }

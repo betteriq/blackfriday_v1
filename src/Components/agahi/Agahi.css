@@ -1,5 +1,5 @@
 .agahi {
-  background-color: var(--ghermerz);
+  background-color:rgb(252, 55, 70) ;
   position: fixed;
   /* position: static;      chera moghe style dehi mipare ba click*/
   bottom: 0;
@@ -15,12 +15,15 @@
     justify-content: center;
     align-items: center;
     font-size: 15px;
+    /* background-color: #fff; */
 }
 .agahi_main button {
   color: #ffffff;
   background: none;
   border: none;
   cursor: pointer;
-  
+  display: flex;
+  justify-content: center;
+  align-items: center ;
   font-size: 18px;
 }

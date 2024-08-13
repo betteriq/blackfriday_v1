@@ -1,0 +1,79 @@
+.contact {
+  /* height: 100vh; */
+  background-color: #000;
+  display: flex;
+  color: aliceblue;
+  flex-direction: column;
+}
+.contact_p1 {
+  height: 70vh;
+  width: 100%;
+  background: url("../../../assets/Images/bg-01-b.jpg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact_p1_index {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+}
+.contact_p1_index p {
+  font-family: "Kaushan Script", cursive;
+  margin-bottom: 0;
+  text-transform: capitalize;
+}
+.contact_p1_index h1 {
+  text-transform: uppercase;
+  font-family: "League Gothic", sans-serif;
+}
+.contact_input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* width: 100%; */
+  margin: 10px 30px;
+  height: 70vh;
+}
+.contact_input_p1 {
+  /* background-color: #fff; */
+  width: 50%;
+}
+.contact_input_p2 {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.contact_input_p2_index {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  align-self: center;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+.contact_input_p2_index * {
+  color: #c7c3c3;
+  padding: 10px;
+}
+.contact_input_p2_index .aval {
+  /* background-color: #fff; */
+  display: flex;
+  align-items: flex-start;
+  margin: 0;
+  padding: 0;
+  justify-content: space-between;
+}
+.contact_input_p2_index .aval input {
+  width: 45%;
+}
+.message {
+  padding: 80px;
+}
