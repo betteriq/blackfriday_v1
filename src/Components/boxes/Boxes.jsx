@@ -3,7 +3,6 @@ import "./Boxes.css";
 
 function Boxes({ duration }) {
   const [time, setTime] = useState(duration);
-  // console.log(duration);
   useEffect(() => {
     setTimeout(() => {
       setTime(time - 1000);
@@ -15,7 +14,6 @@ function Boxes({ duration }) {
     let totalminutes = parseInt(Math.floor(totalsecond / 60));
     let totalhours = parseInt(Math.floor(totalminutes / 60));
     let days = parseInt(Math.floor(totalhours / 24));
-    // console.log(mili);
     let seconds = parseInt(totalsecond % 60);
     let minutes = parseInt(totalminutes % 60);
     let hours = parseInt(totalhours % 24);

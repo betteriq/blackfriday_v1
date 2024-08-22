@@ -11,7 +11,6 @@ function Shop() {
       .then((data) => setProducts(data), setLoad(true))
       .catch((error) => console.error("Errod dade dadash"));
   }, []);
-  console.log(products);
   return (
     <div className="shop">
       <div className="shop_container">
@@ -26,9 +25,8 @@ function Shop() {
       <div className="shop_lists">
         {load &&
           products.map((data) => {
-            console.log(data.id);
             return (
-              <Link to={`/product/${data.id}`}>
+              <Link to={`/product/${data.id}`} key={data.id}>
                 <div className="lists">
                   <div className="list">
                     <div className="list_container">

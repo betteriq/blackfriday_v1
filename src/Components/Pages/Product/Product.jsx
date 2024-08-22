@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import "./Product.css";
+import { useDispatch } from "react-redux";
+import { cSlicer } from "../../Redux/cSlicer";
 function Product() {
   const [product, setProducts] = useState([]);
   const { id } = useParams();
-  // console.log(idf);
+  const dispatch = useDispatch();
   useEffect(() => {
-    console.log("useEffect triggered");
     fetch("/datas.json")
       .then((res) => {
         if (!res) {
@@ -17,13 +18,11 @@ function Product() {
       })
       .then((data) => {
         const product = data.find((item) => item.id === parseInt(id));
-        console.log("Data received:", data);
         setProducts(product);
       })
       .catch((error) => console.error(error));
   }, []);
   if (!product) return <p>در حال بارگذاری...</p>;
-  console.log("PPPPPPPPPPPPPPPPPPPP", product);
   return (
     <div className="product">
       <div className="product_main">
@@ -36,22 +35,27 @@ function Product() {
             <h1>{product.title}</h1>
             <section>{product.price}</section>
             <p>{product.description}</p>
-            <button className="btn">Add</button>
+            <button
+              className="btn"
+              onClick={() => dispatch(cSlicer.actions.decream(product))}
+            >
+              Add
+            </button>
           </div>
           <div className="main_two_p_two">
             <section>Category : {product.daste}</section>
             <p>Free shiping on orders over 50$ </p>
             <div>
               <input type="radio" name="sdsds" id="first" />
-              <label for="first">   No-Risk Money Back Guarantee!</label>
+              <label htmlFor="first"> No-Risk Money Back Guarantee!</label>
             </div>
             <div>
               <input type="radio" name="" id="second" />
-              <label for="second">   No Hassle Refunds</label>
+              <label htmlFor="second"> No Hassle Refunds</label>
             </div>
             <div>
               <input type="radio" name="" id="third" />
-              <label for="third">  Secure Payments</label>
+              <label htmlFor="third"> Secure Payments</label>
             </div>
 
             <div className="main_two_p_two_g">

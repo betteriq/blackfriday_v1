@@ -1,0 +1,50 @@
+i {
+  /* padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px; */
+  border: 1px solid yellow;
+}
+
+.sliding-section {
+  position: fixed;
+  top: 0;
+  right: -35%; /* ابتدا خارج از صفحه */
+  width: 35%;
+  height: 100%;
+  background-color: #2a2a2a;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+  transition: right 0.5s ease;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.basket-main p {
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+.basket-one img {
+  width: 64px;
+  height: 64px;
+}
+
+.sliding-section.open {
+  right: 0; /* وقتی باز می‌شود به سمت چپ می‌آید */
+}
+.basket {
+  display: flex;
+  flex-direction: column;
+  color: #fafaaf;
+  font-size: 0.3em;
+}
+.basket-one {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: row;
+}
+.basket-one-pro {
+  /* background-color: #fff; */
+}
+.totalp {
+  font-size: 16px;
+}
