@@ -42,9 +42,11 @@
 .home span,
 .home h1 {
   font-family: "League Gothic", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 100px;
   text-transform: uppercase;
-  font-weight: 200;
-  font-size: 110px;
   margin: 0px 0px 10px;
   line-height: 90%;
 }

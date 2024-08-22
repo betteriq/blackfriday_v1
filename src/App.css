@@ -1,24 +1,31 @@
-@import url("https://fonts.googleapis.com/css2?family=League+Gothic&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=League+Gothic&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=League+Gothic&display=swap"); */
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic:wdth@75..100&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=League+Gothic&family=Manrope:wght@200..800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Manrope:wght@200..800&display=swap");
 :root {
-  --ghermerz: #ff4955;
+  --ghermerz: #fc3746;
   --sooarti: rgb(255, 73, 85);
   /* rgb(252, 55, 70) soorati  rgb(255, 73, 85) */
   --kaj: "Kaushan Script";
 }
 .btn {
   background-color: var(--ghermerz);
-  border-radius: 10px;
+  border-radius: 5px;
   padding: 10px 30px;
   border: none;
   color: #ffffff;
   text-transform: uppercase;
   cursor: pointer;
+  font-family: "League Gothic", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  margin-top: 2em;
+  font-size: 1.5em;
 }
 
 .container {
   height: max-content;
   width: 100vw;
+  background: #000;
 }

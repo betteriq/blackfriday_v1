@@ -61,7 +61,7 @@
   margin-right: 20px;
 }
 .list {
-  border-color: 1px solid yellow;
+  /* border-color: 1px solid yellow; */
   color: #ffffcf;
 }
 .list * {
