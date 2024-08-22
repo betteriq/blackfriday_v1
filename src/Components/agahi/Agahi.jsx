@@ -10,11 +10,11 @@ function Agahi() {
   return (
     <div className="agahi">
       <div className="agahi_main" style={{ display: positions }}>
-        <h1>
+        <p>
           This is a demo store for testing purposes — no orders shall be
-          fulfilled.
-        </h1>
-        <button onClick={chbg}>Dismiss</button>
+          fulfilled . {"    "}
+        </p>
+        <p onClick={chbg}>   Dismiss</p>
       </div>
     </div>
   );

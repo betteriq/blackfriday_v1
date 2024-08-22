@@ -8,13 +8,6 @@ import Tempthree from "../tempthree/Tempthree";
 import Tempfour from "../tempfour/Tempfour";
 import Temp_five from "../temp_five";
 
-import lolo from "../../assets/Images/1.jpg";
-const data = {
-  one: {
-    hassan: "sss",
-  },
-};
-const jami = "sdsds";
 function Home() {
   return (
     <>

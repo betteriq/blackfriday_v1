@@ -1,8 +1,6 @@
 import React, { createContext, useState } from "react";
 import "./App.css";
 import Home from "./Components/home/Home";
-import Boxes from "./Components/boxes/Boxes";
-import Agahi from "./Components/agahi/Agahi";
 import Tempone from "./Components/temp_one/Tempone";
 import Temptwo from "./Components/temp_two/Temptwo";
 import Tempthree from "./Components/tempthree/Tempthree";
@@ -31,7 +29,6 @@ function App() {
   const toggleSectionFalse = () => {
     setIsOpen(false);
   };
-  const yuyu = "isOpen";
 
   return (
     <>
@@ -39,10 +36,9 @@ function App() {
         <Apprider2.Provider value={toggleSection}>
           <Apprider3.Provider value={toggleSectionFalse}>
             <Provider store={store}>
-              <div className="container" onClick={toggleSection}>
+              <div className="container">
                 <Nav />
                 <Scroll />
-
                 <Routes>
                   <Route path="/" element={<Home />} />
                   <Route path="/tempone" element={<Tempone />} />
@@ -53,7 +49,6 @@ function App() {
                   <Route path="/shop" element={<Shop />} />
                   <Route path="/about" element={<About />} />
                   <Route path="/contact" element={<Contact />} />
-                  {/* <Route path="/product" element={<Product />} /> */}
                   <Route path="/product/:id" element={<Product />} />
                   <Route path="/basket" element={<Basket />} />
                 </Routes>

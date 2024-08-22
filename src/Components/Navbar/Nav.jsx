@@ -6,7 +6,6 @@ import { useSelector } from "react-redux";
 import Basket from "../Basket/Basket";
 function Nav() {
   const selectorz = useSelector((state) => state.child_store.productz);
-  // const nSelectorz=selectorz.lenght()
   const items = ["apple", "mapple"];
 
 

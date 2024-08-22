@@ -3,13 +3,14 @@ import "./Basket.css";
 import { useDispatch, useSelector } from "react-redux";
 import { cSlicer } from "../Redux/cSlicer";
 import { Apprider1, Apprider2, Apprider3 } from "../../App";
+import Pointer from "./Pointer/Pointer";
 
 function Basket(props) {
   const selectorz = useSelector((state) => state.child_store.productz);
   // console.log(selectorz, "seeeeeeeeeeeeeeeeeee");
   let totalPrice = 0;
   const jadid1 = useContext(Apprider1);
-  const jadid2 = useContext(Apprider2);
+  const toggleSection = useContext(Apprider2);
   const toggleSectionFalse = useContext(Apprider3);
   const dispatch = useDispatch();
   const [addad, setAddad] = useState(0);
@@ -39,9 +40,11 @@ function Basket(props) {
       <i
         class="fa fa-shopping-basket"
         aria-hidden="true"
-        onClick={toggleSectionFalse}
+        onClick={toggleSection}
       >
-        box {selectorz.length}
+        <div className="ponitor">
+          <Pointer /> {selectorz.length}
+        </div>
       </i>
       <div className={`sliding-section ${jadid1 ? "open" : ""}`}>
         {/* محتوای بخش شما */}
@@ -54,23 +57,30 @@ function Basket(props) {
                 <div className="basket-one">
                   <div className="basket-one-pro">
                     <img src={data.product.img} alt="" />
-                    <div>{data.product.title}</div>
-                    <button>-</button>
-                    {data.qty}
-                    <button
-                      onClick={() =>
-                        dispatch(cSlicer.actions.decream(data.product))
-                      }
-                    >
-                      +
-                    </button>
+                    <div>
+                      <div>{data.product.title}</div>
+                      <div className="btn-basket">
+                        <button>-</button>
+                        {data.qty}
+                        <button
+                          onClick={() =>
+                            dispatch(cSlicer.actions.decream(data.product))
+                          }
+                        >
+                          +
+                        </button>
+                      </div>
+                    </div>
                   </div>
-                  <p>{data.product.price}</p>
+                  <p>$ {data.product.price}</p>
                 </div>
               </div>
             );
           })}
-          <h1 className="totalp">Total Price is : {addad}</h1>
+          <h1 className="totalp">Total Price is : ${addad}</h1>
+          <button className="btn" onClick={toggleSectionFalse}>
+            inha
+          </button>
         </h1>
       </div>
       {console.log("Adadd issssssssssssssss : ", addad)}

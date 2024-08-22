@@ -3,9 +3,23 @@ i {
   font-size: 16px;
   cursor: pointer;
   margin-top: 20px; */
-  border: 1px solid yellow;
+  /* border: 1px solid yellow; */
+  position: relative;
 }
-
+.ponitor {
+  position: absolute;
+  top: -0.2em;
+  left: 1.5em;
+  color: #fff;
+  font-size: 15px;
+  background-color: red;
+  height: 20px;
+  width: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
 .sliding-section {
   position: fixed;
   top: 0;
@@ -35,16 +49,31 @@ i {
   flex-direction: column;
   color: #fafaaf;
   font-size: 0.3em;
+  /* border: 1px solid green; */
 }
 .basket-one {
   display: flex;
-  justify-content: start;
+  justify-content: center;
   align-items: center;
   flex-direction: row;
+  /* border: 1px solid red; */
+  margin-bottom: 20px;
 }
 .basket-one-pro {
   /* background-color: #fff; */
+  /* border: 1px solid white; */
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 .totalp {
   font-size: 16px;
+}
+.btn-basket {
+  margin-top: 10px;
+  padding: 8px;
+  /* background-color: #fff; */
+  display: flex;
+  justify-content: space-between;
 }

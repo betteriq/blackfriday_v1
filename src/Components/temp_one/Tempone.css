@@ -1,9 +1,17 @@
-.tempone {
+.momo {
+  background: #000;
+  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.tempone {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   height: 100vh;
-  width: 100vw;
+  width: 90vw;
   background: url("../../assets/Images/bg-006.jpg") no-repeat center center;
 }
 .tempone_first {

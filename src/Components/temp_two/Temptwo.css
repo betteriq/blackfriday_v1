@@ -1,10 +1,18 @@
+.momo {
+  background: #000;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .temptwo {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
   background:inherit;
-  width: 100vw;
+  width: 90vw;
 }
 
 .temptwo_first {
