@@ -6,16 +6,27 @@ import { Apprider1, Apprider2, Apprider3 } from "../../App";
 
 function Basket(props) {
   const selectorz = useSelector((state) => state.child_store.productz);
-
+  // console.log(selectorz, "seeeeeeeeeeeeeeeeeee");
+  let totalPrice = 0;
   const jadid1 = useContext(Apprider1);
   const jadid2 = useContext(Apprider2);
   const toggleSectionFalse = useContext(Apprider3);
-
   const dispatch = useDispatch();
   const [addad, setAddad] = useState(0);
   const setted = (a) => {
-    setAddad((addad) => addad + a);
+    setAddad((addad) => a);
   };
+  selectorz.map((data) => {
+    // console.log("khaneye shomare  : ", data);
+    // console.log(data.product.price * data.qty);
+    // console.log("Total price is :", totalPrice);
+    totalPrice += data.product.price * data.qty;
+    // console.log("majmooe is :", totalPrice);
+  });
+  useEffect(() => {
+    console.log(11111);
+    setted(totalPrice);
+  }, [totalPrice]);
   // useEffect(() => {
   //   let total = 0;
   //   selectorz.array.forEach((element) => {
@@ -38,8 +49,6 @@ function Basket(props) {
         <hr />
         <h1>
           {selectorz.map((data) => {
-            // setted(data.product.price);
-
             return (
               <div className="basket" key={data.product.id}>
                 <div className="basket-one">
@@ -47,7 +56,7 @@ function Basket(props) {
                     <img src={data.product.img} alt="" />
                     <div>{data.product.title}</div>
                     <button>-</button>
-                    {data.qty}{setAddad(1)}
+                    {data.qty}
                     <button
                       onClick={() =>
                         dispatch(cSlicer.actions.decream(data.product))
@@ -61,8 +70,10 @@ function Basket(props) {
               </div>
             );
           })}
+          <h1 className="totalp">Total Price is : {addad}</h1>
         </h1>
       </div>
+      {console.log("Adadd issssssssssssssss : ", addad)}
     </div>
   );
 }

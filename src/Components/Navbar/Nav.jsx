@@ -1,8 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Nav.css";
 import logo from "../../assets/Images/logo-me.svg";
 import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
+import Basket from "../Basket/Basket";
 function Nav() {
+  const selectorz = useSelector((state) => state.child_store.productz);
+  // const nSelectorz=selectorz.lenght()
+  const items = ["apple", "mapple"];
+
+
+
   return (
     <div className="nav-main">
       <img src={logo} alt="" className="nav-logo" />
@@ -12,7 +20,7 @@ function Nav() {
         <Link to="/about">about</Link>
         <Link to="/contact">contact</Link>
       </div>
-      <i class="fa fa-shopping-basket" aria-hidden="true">box</i>
+      <Basket />
     </div>
   );
 }

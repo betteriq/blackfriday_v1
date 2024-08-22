@@ -16,7 +16,6 @@ function Product() {
     <div className="product">
       <div className="product_p1">
         <div className="product_p1_p1">
-          {console.log(onvan)}
           {onvan.map((data) => {
            return  <img src={data.img} alt="" />;
           })}

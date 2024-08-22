@@ -7,15 +7,13 @@ function Getdata() {
       .then((response) => {
         if (!response.ok) {
           throw new Error("Network ErroR");
-          console.log("err");
         }
         return response.json();
       })
       .then((data) => setData(data.result.symbols));
   }, []);
-  console.log("not err");
   const btcprice = data?.NOTUSDT.stats.lastPrice;
-  console.log(data?.NOTUSDT.stats);
+  (data?.NOTUSDT.stats);
   return (
     <div>
       <h1>getdata</h1>
