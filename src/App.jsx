@@ -53,7 +53,7 @@ function App() {
                   <Route path="/basket" element={<Basket />} />
                 </Routes>
               </div>
-              <Footer />
+              {/* <Footer /> */}
             </Provider>
           </Apprider3.Provider>
         </Apprider2.Provider>

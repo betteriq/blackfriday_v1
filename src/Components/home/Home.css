@@ -12,7 +12,7 @@
   background: url("../../assets/Images/bg-01-b.jpg") no-repeat ;
   background-size: 100% 100%;
   position: relative;
-  top: -10px;
+  /* top: -10px; */
   padding: 0;
   margin: 0;
   left: 0;
@@ -34,7 +34,7 @@
   
 }
 .home_l2 h3 {
-  font-size: 1.2rem;
+  font-size: 3vw;
   font-weight: lighter;
 }
 .home span {
@@ -46,7 +46,7 @@
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  font-size: 100px;
+  font-size: 8vw;
   text-transform: uppercase;
   margin: 0px 0px 10px;
   line-height: 90%;
