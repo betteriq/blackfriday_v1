@@ -5,8 +5,9 @@ import "./Tempfour.css";
 function Tempfour() {
   return (
     <div className="tempfour">
-      <div className="tpfour_box">~
-        <div className="tpfour_slide">
+      <div className="tpfour_box">
+        <div className="tpfour_slide"></div>
+        <div className="tpfour_content">
           <h3>what our client say</h3>
           <h1>customer testominials</h1>
           <div>

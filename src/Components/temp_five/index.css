@@ -20,11 +20,19 @@
   font-family: "Kaushan Script", cursive;
 }
 .tempfive_container h1 {
+  font-family: "League Gothic", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
   text-transform: uppercase;
   color: aliceblue;
 }
 .tempfive_container p {
   font-size: 1.5em;
+  font-family: "League Gothic", sans-serif;
+  /* font-optical-sizing: auto; */
+  /* font-weight: 400; */
+  /* font-style: normal; */
   color: #ffffffcf;
   
 }
