@@ -22,13 +22,13 @@ function Home() {
           </div>
         </div>
       </div>
-      <Boxes duration={2 * 24 * 60 * 60 * 1000} />
+      <Boxes />
       <Agahi />
       <Tempone />
       <Temptwo />
-      <Tempthree />
-      <Tempfour />
-      <Temp_five />
+      {/* <Tempthree /> */}
+      {/* <Tempfour /> */}
+      {/* <Temp_five /> */}
     </>
   );
 }

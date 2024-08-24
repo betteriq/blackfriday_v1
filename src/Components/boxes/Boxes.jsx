@@ -46,19 +46,19 @@ const Boxes = () => {
   return (
     <div className="boxes">
       <div className="box">
-        <h1>{timeLeft.days} </h1>
+        <h3>{timeLeft.days} </h3>
         <p>Days</p>
       </div>
       <div className="box">
-        <h1>{timeLeft.hours} </h1>
+        <h3>{timeLeft.hours} </h3>
         <p>Hours</p>
       </div>
       <div className="box">
-        <h1>{timeLeft.minutes}</h1>
+        <h3>{timeLeft.minutes}</h3>
         <p>Minutes</p>
       </div>
       <div className="box">
-        <h1>{timeLeft.seconds}</h1>
+        <h3>{timeLeft.seconds}</h3>
         <p>Seconds</p>
       </div>
     </div>
