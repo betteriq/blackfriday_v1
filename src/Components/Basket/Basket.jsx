@@ -28,13 +28,7 @@ function Basket(props) {
     console.log(11111);
     setted(totalPrice);
   }, [totalPrice]);
-  // useEffect(() => {
-  //   let total = 0;
-  //   selectorz.array.forEach((element) => {
-  //     total += element.product.price;
-  //   });
-  //   setAddad(total)
-  // }, [selectorz]);
+
   return (
     <div className="basket-main">
       <i
@@ -46,6 +40,7 @@ function Basket(props) {
           <Pointer /> {selectorz.length}
         </div>
       </i>
+
       <div className={`sliding-section ${jadid1 ? "open" : ""}`}>
         {/* محتوای بخش شما */}
         <p>Shopping cart</p>
