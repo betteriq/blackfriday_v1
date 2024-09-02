@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import "./Product.css";
 import { useDispatch } from "react-redux";
 import { cSlicer } from "../../Redux/cSlicer";
+import Nav from "../../Navbar/Nav";
 function Product() {
   const [product, setProducts] = useState([]);
   const { id } = useParams();
@@ -25,6 +26,7 @@ function Product() {
   if (!product) return <p>در حال بارگذاری...</p>;
   return (
     <div className="product">
+      <Nav/>
       <div className="product_main">
         <div className="main_one">
           <img src={product.img} alt="" />
@@ -33,11 +35,11 @@ function Product() {
           <div className="main_two_p_one">
             <section>{product.daste}</section>
             <h1>{product.title}</h1>
-            <section>{product.price}</section>
+            <section>${product.price}</section>
             <p>{product.description}</p>
             <button
               className="btn"
-              onClick={() => dispatch(cSlicer.actions.decream(product))}
+              onClick={() => dispatch(cSlicer.actions.increament(product))}
             >
               Add
             </button>

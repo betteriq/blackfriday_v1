@@ -1,6 +1,6 @@
 .shop {
   background: #000;
-  position: relative;
+  /* position: relative; */
   top: -10px;
   height: 100%;
   left: 0;
@@ -102,4 +102,7 @@
 .list img:hover {
   transform: scale(1.2);
   transform-origin: center;
+}
+.popo{
+  text-decoration: line-through;
 }

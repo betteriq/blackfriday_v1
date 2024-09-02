@@ -8,12 +8,13 @@
   transition: all 2s;
   width: 100%;
 }
+
 .agahi_main {
   display: flex;
   justify-content: center;
   align-items: center;
   font-family: "Manrope", sans-serif;
-  font-size: 1.5vw;
+  font-size: 1.3vw;
   font-weight: 400;
   color: rgb(255, 255, 255);
 }
@@ -26,4 +27,15 @@
   justify-content: center;
   align-items: center;
   font-size: 18px;
+}
+@media (max-width: 760px) {
+  .agahi_main {
+    font-size: 2.3vw;
+  }
+}
+@media (max-width: 480px) {
+  .agahi_main {
+    font-size: 2vw;
+    display: none;
+  }
 }

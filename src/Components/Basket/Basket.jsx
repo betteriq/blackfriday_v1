@@ -55,11 +55,17 @@ function Basket(props) {
                     <div>
                       <div>{data.product.title}</div>
                       <div className="btn-basket">
-                        <button>-</button>
+                        <button
+                          onClick={() =>
+                            dispatch(cSlicer.actions.decreament(data.product))
+                          }
+                        >
+                          -
+                        </button>
                         {data.qty}
                         <button
                           onClick={() =>
-                            dispatch(cSlicer.actions.decream(data.product))
+                            dispatch(cSlicer.actions.increament(data.product))
                           }
                         >
                           +
@@ -72,9 +78,9 @@ function Basket(props) {
               </div>
             );
           })}
-          <h1 className="totalp">Total Price is : ${addad}</h1>
+          <h5 className="totalp">Total Price is : ${addad}</h5>
           <button className="btn" onClick={toggleSectionFalse}>
-            inha
+            Exit
           </button>
         </h1>
       </div>

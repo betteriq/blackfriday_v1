@@ -22,7 +22,7 @@ function Scroll() {
   });
   return (
     <div className="scroll-to-top">
-      {visible && <button onClick={scrollTop} className="btn">bala</button>}
+      {visible && <button onClick={scrollTop} className="btn">Up</button>}
     </div>
   );
 }

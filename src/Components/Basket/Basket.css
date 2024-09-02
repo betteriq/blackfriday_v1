@@ -9,11 +9,11 @@ i {
 .ponitor {
   position: absolute;
   top: -0.2em;
-  left: 1.5em;
+  left: 0.5em;
   color: #fff;
   font-size: 15px;
   background-color: red;
-  height: 20px;
+  height: 15px;
   width: 20px;
   display: flex;
   justify-content: center;
@@ -66,6 +66,10 @@ i {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  
+}
+.basket-one-pro *{
+  margin-left:5px;
 }
 .totalp {
   font-size: 16px;
@@ -76,4 +80,13 @@ i {
   /* background-color: #fff; */
   display: flex;
   justify-content: space-between;
+}
+@media (max-width: 800px) {
+  .sliding-section {
+    right: -75%; /* ابتدا خارج از صفحه */
+    width: 75%;
+  }
+  .totalp {
+    font-size: 7vw;
+  }
 }

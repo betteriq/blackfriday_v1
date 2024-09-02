@@ -10,14 +10,21 @@ function Nav() {
 
   return (
     <div className="nav-container">
-    
       <div className="nav-main">
         <img src={logo} alt="" className="nav-logo" />
         <div className="nav-menu">
-          <Link to="/">home</Link>
-          <Link to="/shop">shop</Link>
-          <Link to="/about">about</Link>
-          <Link to="/contact">contact</Link>
+          <Link to="/" className="p_p">
+            home
+          </Link>
+          <Link to="/shop" className="p_p">
+            shop
+          </Link>
+          <Link to="/about" className="p_p">
+            about
+          </Link>
+          <Link to="/contact" className="p_p">
+            contact
+          </Link>
         </div>
         <div className="humberger">
           <span></span>
@@ -27,6 +34,24 @@ function Nav() {
         <div className="basketbal">
           <Basket />
         </div>
+      </div>
+      <div className="nav-chain">
+        {" "}
+        <Link to="/" className="p_p">
+          home
+        </Link>
+        <Link to="/shop" className="p_p">
+          shop
+        </Link>
+        <Link to="/about" className="p_p">
+          about
+        </Link>
+        <Link to="/contact" className="p_p">
+          contact
+        </Link>
+        
+          <Basket />
+        
       </div>
     </div>
   );

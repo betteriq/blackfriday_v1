@@ -12,9 +12,9 @@ function Agahi() {
       <div className="agahi_main" style={{ display: positions }}>
         <p>
           This is a demo store for testing purposes — no orders shall be
-          fulfilled . {"    "}
+          fulfilled . 
         </p>
-        <p onClick={chbg}>   Dismiss</p>
+        <p onClick={chbg} className="p_p"> Dismiss</p>
       </div>
     </div>
   );

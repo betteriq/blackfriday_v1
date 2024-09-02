@@ -1,9 +1,11 @@
 import React from "react";
 import "./Contact.css";
+import Nav from "../../Navbar/Nav";
 
 function Contact() {
   return (
     <div className="contact">
+      <Nav/>
       <div className="contact_p1">
         <div className="contact_p1_index">
           <p>lets talk</p>
