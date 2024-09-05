@@ -35,24 +35,21 @@ function Nav() {
           <Basket />
         </div>
       </div>
-      <div className="nav-chain">
-        {" "}
+        <div className="nav-chain">
         <Link to="/" className="p_p">
-          home
-        </Link>
-        <Link to="/shop" className="p_p">
-          shop
-        </Link>
-        <Link to="/about" className="p_p">
-          about
-        </Link>
-        <Link to="/contact" className="p_p">
-          contact
-        </Link>
-        
-          <Basket />
-        
-      </div>
+            home
+          </Link>
+          <Link to="/shop" className="p_p">
+            shop
+          </Link>
+          <Link to="/about" className="p_p">
+            about
+          </Link>
+          <Link to="/contact" className="p_p">
+            contact
+          </Link>
+        </div>
+     
     </div>
   );
 }

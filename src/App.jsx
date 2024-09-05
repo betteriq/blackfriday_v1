@@ -37,8 +37,7 @@ function App() {
           <Apprider3.Provider value={toggleSectionFalse}>
             <Provider store={store}>
               <div className="container">
-                {/* <Nav /> */}
-                <Scroll />
+                {/* <Scroll /> */}
                 <Routes>
                   <Route path="/" element={<Home />} />
                   <Route path="/tempone" element={<Tempone />} />
@@ -53,7 +52,7 @@ function App() {
                   <Route path="/basket" element={<Basket />} />
                 </Routes>
               </div>
-              <Footer />
+              {/* <Footer /> */}
             </Provider>
           </Apprider3.Provider>
         </Apprider2.Provider>

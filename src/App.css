@@ -21,25 +21,7 @@
   /* font-weight: 200; */
   font-style: normal;
   margin-top: 2em;
-  font-size: 1.7vw;
-}
-.p_p {
-  cursor: pointer;
-  position: relative;
-  display: inline-block;
-}
-.p_p::after {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 2px;
-  bottom: -8px;
-  left: 0;
-  background-color: #fff;
-  transition: width 0.4s ease;
-}
-.p_p:hover::after {
-  width: 100%;
+  font-size: 2vw;
 }
 
 .container {
@@ -47,24 +29,11 @@
   margin: 0;
   padding: 0;
   /* overflow: hidden; */
-  /* height: 100vh; */
+  height: inherit;
   background: #000;
-  overflow: hidden;
 }
-@media screen and (max-width: 760px) {
-  .btn {
-    background-color: var(--ghermerz);
-    border-radius: 5px;
-    padding: 1.5vw 4.5vw;
-    border: none;
-    color: #ffffff;
-    text-transform: uppercase;
-    cursor: pointer;
-    font-family: "League Gothic", sans-serif;
-    font-optical-sizing: auto;
-    /* font-weight: 200; */
-    font-style: normal;
-    margin-top: 2em;
-    font-size: 3.7vw;
+/* @media screen and (min-width: 760px) {
+  .container {
+    display: none;
   }
-}
+} */

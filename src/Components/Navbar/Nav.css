@@ -84,7 +84,7 @@
   border-radius: 5px;
 }
 .nav-chain {
-  display: none;
+  /* display: none; */
 }
 
 @media (max-width: 800px) {
@@ -103,14 +103,14 @@
     display: none;
   }
   .nav-chain {
-    /* background-color: #ff4955; */
+    background-color: #ff4955;
+    display: flex;
     position: absolute;
     top: 10px;
     left: 0;
     width: 100vw;
     /* height: 10px; */
     color: aliceblue;
-    display: flex;
     justify-content: space-around;
     align-items: center;
     z-index: 100;
