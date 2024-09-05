@@ -7,11 +7,13 @@ import Temptwo from "../temp_two/Temptwo";
 import Tempthree from "../tempthree/Tempthree";
 import Tempfour from "../tempfour/Tempfour";
 import Temp_five from "../temp_five";
+import Nav from "../Navbar/Nav";
 
 function Home() {
   return (
-    <>
+    <div className="rowe">
       <div className="home">
+      <Nav/>
         <div className="home_l1">
           <div className="home_l2">
             <h3>Hurry, Black Friday is Almost Here!</h3>
@@ -26,10 +28,10 @@ function Home() {
       <Agahi />
       <Tempone />
       <Temptwo />
-      {/* <Tempthree /> */}
-      {/* <Tempfour /> */}
-      {/* <Temp_five /> */}
-    </>
+      <Tempthree />
+      <Tempfour />
+      <Temp_five />
+    </div>
   );
 }
 

@@ -37,8 +37,7 @@ function App() {
           <Apprider3.Provider value={toggleSectionFalse}>
             <Provider store={store}>
               <div className="container">
-                <Nav />
-                <Scroll />
+                {/* <Scroll /> */}
                 <Routes>
                   <Route path="/" element={<Home />} />
                   <Route path="/tempone" element={<Tempone />} />

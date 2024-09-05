@@ -89,3 +89,24 @@
 .main_two_p_two ul {
   list-style-type: none;
 }
+/* @media (max-width: 800px) {
+  .product_main {
+    flex-direction: column;
+    overflow: hidden;
+    margin-top: 15vw;
+  }
+  .main_one {
+    width: 100vw;
+    height: 80vw;
+    overflow: hidden;
+  }
+  .main_one img {
+    width: 100%;
+    object-fit: cover;
+    height: 80vw;
+  }
+  .main_two {
+    width: 100vw;
+    margin: 5vw 10vw;
+  }
+} */

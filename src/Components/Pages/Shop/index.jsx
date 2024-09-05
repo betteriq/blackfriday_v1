@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./index.css";
 import { Link } from "react-router-dom";
+import Nav from "../../Navbar/Nav";
 
 function Shop() {
   const [products, setProducts] = useState([]);
@@ -14,6 +15,7 @@ function Shop() {
   return (
     <div className="shop">
       <div className="shop_container">
+      <Nav/>
         <div className="shop_l1">
           <h1 className="shop_logo">Shop</h1>
         </div>
@@ -40,7 +42,9 @@ function Shop() {
                         <i class="fa-regular fa-star"></i>
                         <i class="fa-regular fa-star"></i>
                       </div>
-                      <p>$600 $475</p>
+                      <p>
+                        <section className="popo">$600</section>$475
+                      </p>
                     </div>
                   </div>
                 </div>

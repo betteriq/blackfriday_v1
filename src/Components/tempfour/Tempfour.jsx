@@ -9,8 +9,8 @@ function Tempfour() {
         <div className="tpfour_slide"></div>
         <div className="tpfour_content">
           <h3>what our client say</h3>
-          <h1>customer testominials</h1>
-          <div>
+          <h2>customer testominials</h2>
+          <div className="tpfourjoda">
             <div>
               <i class="fa-regular fa-star"></i>
               <i class="fa-regular fa-star"></i>

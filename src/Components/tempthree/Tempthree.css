@@ -1,16 +1,17 @@
 .tempthree {
-  background: inherit;
+  /* background: inherit; */
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 100vw;
   align-items: center;
   height: 100vh;
+  font-weight: 100;
 }
 .tempthree h3 {
   font-family: var(--kaj);
   /* color: var(--ghermez); */
-  font-size: 2em;
+  font-size: 2vw;
   color: #ff4955;
   margin-bottom: 20px;
 }
@@ -20,7 +21,7 @@
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  font-size: 3em;
+  font-size: 5vw;
   text-transform: uppercase;
   margin: 0;
   padding: 0;
@@ -28,19 +29,31 @@
 }
 .tempthree_boxes {
   display: flex;
-  /* justify-content: space-around; */
+  justify-content: space-around;
   align-items: center;
   /* background: yellow; */
   flex-direction: row;
-  width: 80%;
+  width: 100%;
+  flex-wrap: wrap;
 }
 .tempthree_boxes section {
   display: flex;
-  width: 30%;
+  width: 20vw;
   justify-content: space-around;
   align-items: center;
   flex-direction: column;
+  flex-wrap: wrap;
+
   background-color: #000;
+}
+.tempthree h4 {
+  margin-bottom: 30px;
+}
+.dr {
+  font-size: 30vw;
+}
+.kol {
+  text-decoration: none;
 }
 
 .tempthree_boxes section img {
@@ -54,6 +67,8 @@
 .tempthree_boxes p {
   font-family: "League Gothic", sans-serif;
   color: #ffffff;
+  font-size: 2vw;
+  font-weight: 100;
 }
 .stars {
   display: flex;
@@ -61,4 +76,24 @@
   justify-content: center;
   align-items: center;
   color: #ff4955;
+}
+.tempthree_boxes section h3 {
+  font-size: 2vw;
+  font-weight: 100;
+}
+
+@media (max-width: 760px) {
+  .tempthree h3 {
+    font-size: 5vw;
+  }
+  .tempthree_boxes section h3 {
+    font-size: 4vw;
+  }
+  .tempthree h4 {
+    font-size: 5vw;
+    margin-bottom: 30px;
+  }
+  .tempthree_boxes section {
+    width: 50vw;
+  }
 }

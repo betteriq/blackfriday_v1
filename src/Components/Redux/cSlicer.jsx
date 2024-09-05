@@ -7,10 +7,18 @@ export const cSlicer = createSlice({
     productz: [],
   },
   reducers: {
-    increament: (state) => {
-      state.nano += 1;
+    decreament: (state,action) => {
+      const existingProductIndex = state.productz.findIndex(
+        (item) => item.product.id === action.payload.id
+      );
+
+      if (existingProductIndex >= 0) {
+        state.productz[existingProductIndex].qty -= 1;
+      } else {
+        state.productz
+      }
     },
-    decream: (state, action) => {
+    increament: (state, action) => {
       const existingProductIndex = state.productz.findIndex(
         (item) => item.product.id === action.payload.id
       );
