@@ -4,12 +4,12 @@ import "./Footers.css";
 function Footers() {
   return (
     <>
-    <hr style={{color:"#ffffff",padding:0,margin:0}}/>
-    <div className="footers">
-      <div className="footers_container">
-        <h3>Copyright © 2024 Black Friday | Powered by Black Friday</h3>
+      <div className="footers">
+        <hr style={{ color: "#ffffff", width: "100vw", margin: 0 }} />
+        <div className="footers_container">
+          <h3>Copyright © 2024 Black Friday | Powered by Black Friday</h3>
+        </div>
       </div>
-    </div>
     </>
   );
 }

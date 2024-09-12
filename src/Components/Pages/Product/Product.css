@@ -8,12 +8,18 @@
   flex-direction: row;
   flex-wrap: wrap;
   letter-spacing: 1px;
-  height: 100vh;
+  height: 100%;
   font-size: 1.25em;
 }
 .product_main {
+  margin: 20vw 0px;
   display: flex;
+  height: 100%;
+  width: 100vw;
   justify-content: space-around;
+  align-items: center;
+  margin-top: 7vw;
+  /* background-color: #fff; */
 }
 .main_one {
   width: 40%;
@@ -63,6 +69,10 @@
   height: auto;
   margin-bottom: 10px;
   padding-bottom: 30px;
+  text-align: justify;
+}
+.hamegi *{
+  display: inline-block;
 }
 .main_two_p_two {
   height: auto;
@@ -93,7 +103,9 @@
   .product_main {
     flex-direction: column;
     overflow: hidden;
-    margin-top: 25vw;
+    /* overflow: scroll; */
+    margin-top: 20vw;
+    height: max-content;
   }
   .main_one {
     width: 100vw;
@@ -106,16 +118,8 @@
     height: 80vw;
   }
   .main_two {
-    width: 100vw;
-    margin: 5vw 10vw;
-  }
-  .main_two_p_one{
-    /* display: none; */
     width: 90vw;
-  }
-  .main_two_p_one p{
-    
-    color: red;
-    text-align: justify;
+    margin: 10vw 30vw;
+    /* overflow: hidden; */
   }
 }

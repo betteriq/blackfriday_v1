@@ -5,7 +5,7 @@ import Nav from "../../Navbar/Nav";
 function Contact() {
   return (
     <div className="contact">
-      <Nav/>
+      <Nav />
       <div className="contact_p1">
         <div className="contact_p1_index">
           <p>lets talk</p>
@@ -16,19 +16,28 @@ function Contact() {
         <div className="contact_input_p1">
           <h1>GET IN TOUCH</h1>
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam ex
-            recusandae corporis esse repudiandae magni voluptatem consectetur
-            veritatis dolor iusto!
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error
+            accusantium ex, totam similique sit quos magni consequatur est optio
+            unde dolores, voluptatum tempore. Facilis eligendi repellendus
+            dolorem blanditiis, earum fugit harum unde error corporis voluptas
+            eum nisi adipisci distinctio amet laudantium neque. Voluptas, animi
+            quo. Et aut non illum temporibus?
           </p>
           <div className="cantact_input_p1_index">
             <div>
-              <h3>address</h3>
+              <h3><i class='fas fa-map-marker'></i>
+               ADDRESS</h3>
             </div>
+            <hr style={{ color: "#ffffff", width: "100vw", margin: 0 }} />
+
             <div>
-              <h3>phone</h3>
+              <h3><i class='fas fa-phone-volume'></i>
+  <section></section>              PHONE</h3>
             </div>
+            <hr style={{ color: "#ffffff", width: "100vw", margin: 0 }} />
+
             <div>
-              <h3>email</h3>
+              <h3>EMAIL</h3>
             </div>
           </div>
         </div>
@@ -43,7 +52,7 @@ function Contact() {
             <label>Email</label>
             <input type="text" />
             <label> Message</label>
-            <input type="text"  className="message"/>
+            <input type="text" className="message" />
           </div>
         </form>
       </div>

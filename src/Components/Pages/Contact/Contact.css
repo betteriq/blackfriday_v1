@@ -21,6 +21,7 @@
   background: rgba(0, 0, 0, 0.6);
   width: 100%;
   height: 100%;
+ 
 }
 .contact_p1_index p {
   font-family: "Kaushan Script", cursive;
@@ -42,6 +43,8 @@
 .contact_input_p1 {
   /* background-color: #fff; */
   width: 50%;
+  overflow: hidden;
+
 }
 .contact_input_p2 {
   width: 50%;
@@ -76,4 +79,14 @@
 }
 .message {
   padding: 80px;
+}
+@media (max-width: 800px) {
+ 
+  .contact_input{
+    flex-direction: column;
+  }
+  .contact_input_p1{
+    width: 90vw;
+    text-align: justify;
+  }
 }

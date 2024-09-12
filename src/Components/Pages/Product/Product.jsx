@@ -35,6 +35,7 @@ function Product() {
         <div className="main_two">
           <div className="main_two_p_one">
             <section>{product.daste}</section>
+
             <h1>{product.title}</h1>
             <section>${product.price}</section>
             <p>{product.description}</p>
@@ -60,7 +61,6 @@ function Product() {
               <input type="radio" name="" id="third" />
               <label htmlFor="third"> Secure Payments</label>
             </div>
-
             <div className="main_two_p_two_g">
               <h4>Guaranteed Safe Checkout</h4>
             </div>
