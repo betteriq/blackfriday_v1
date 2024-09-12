@@ -53,7 +53,7 @@ function Shop() {
             );
           })}
       </div>
-      {/* <Footers/> */}
+      <Footers/>
     </div>
   );
 }

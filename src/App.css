@@ -32,8 +32,9 @@
   height: inherit;
   background: #000;
 }
-/* @media screen and (min-width: 760px) {
-  .container {
-    display: none;
+@media screen and (max-width: 760px) {
+  .btn {
+    padding: 2.5vw 3.5vw;
+    font-size: 5vw;
   }
-} */
+}
