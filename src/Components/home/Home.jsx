@@ -8,6 +8,7 @@ import Tempthree from "../tempthree/Tempthree";
 import Tempfour from "../tempfour/Tempfour";
 import Temp_five from "../temp_five";
 import Nav from "../Navbar/Nav";
+import Footers from "../footer/Footers";
 
 function Home() {
   return (

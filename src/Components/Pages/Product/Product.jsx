@@ -4,6 +4,7 @@ import "./Product.css";
 import { useDispatch } from "react-redux";
 import { cSlicer } from "../../Redux/cSlicer";
 import Nav from "../../Navbar/Nav";
+import Footers from "../../footer/Footers";
 function Product() {
   const [product, setProducts] = useState([]);
   const { id } = useParams();
@@ -66,6 +67,7 @@ function Product() {
           </div>
         </div>
       </div>
+      <Footers/>
     </div>
   );
 }

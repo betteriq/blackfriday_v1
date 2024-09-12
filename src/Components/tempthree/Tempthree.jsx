@@ -11,7 +11,7 @@ function Tempthree() {
       <h3>Unbelievable Discounts Await You</h3>
       <h4>Black Friday Madness is Here!</h4>
       <div className="tempthree_boxes">
-        <Link to="/about"  className="kol">
+        <Link to="/product/7"  className="kol">
           <section>
             <img src={shekleyek8} alt="" />
             <h3>NEXATONE HEADSET</h3>
@@ -24,7 +24,7 @@ function Tempthree() {
             <p className="dr">price $110</p>
           </section>
         </Link>
-        <Link to="/about"  className="kol">
+        <Link to="/product/4"  className="kol">
           <section>
             <img src={shekleyek7} alt="" />
             <h3>ECHOPULSE SOUNDGEAR</h3>
@@ -37,10 +37,10 @@ function Tempthree() {
             <p>price $110</p>
           </section>
         </Link>
-        <Link to="/about"  className="kol">
+        <Link to="/product/8"  className="kol">
           <section>
             <img src={shekleyek6} alt="" />
-            <h3>AUDIOSCULPT ELITE</h3>
+            <h3>EvoTech Mobile</h3>
             <div className="stars">
               <i class="fa-regular fa-star"></i>
               <i class="fa-regular fa-star"></i>
@@ -50,7 +50,7 @@ function Tempthree() {
             <p>price $110</p>
           </section>
         </Link>
-        <Link to="/about"  className="kol">
+        <Link to="/product/8"  className="kol">
           <section>
             <img src={shekleyek5} alt="" />
             <h3>SONOWAVE HEADPHONES</h3>
