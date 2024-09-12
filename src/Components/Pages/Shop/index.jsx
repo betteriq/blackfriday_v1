@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./index.css";
 import { Link } from "react-router-dom";
 import Nav from "../../Navbar/Nav";
+import Footers from "../../footer/Footers";
 
 function Shop() {
   const [products, setProducts] = useState([]);
@@ -43,7 +44,7 @@ function Shop() {
                         <i class="fa-regular fa-star"></i>
                       </div>
                       <p>
-                        <section className="popo">$600</section>$475
+                        <section className="popo">$600 price</section>$475 price
                       </p>
                     </div>
                   </div>
@@ -52,6 +53,7 @@ function Shop() {
             );
           })}
       </div>
+      {/* <Footers/> */}
     </div>
   );
 }

@@ -47,8 +47,9 @@
   font-family: "League Gothic", sans-serif;
 }
 .shop_lists {
-  /* width: 100vw; */
-  margin: 0px 1em;
+  /* background-color: #fff; */
+  width: 100vw;
+  /* margin: 0px 1em; */
   padding: 0;
   display: flex;
   order: 4;
@@ -56,6 +57,7 @@
   justify-content: space-around;
   align-items: center;
   margin: 0 auto;
+  font-weight: 100;
 }
 .lists {
   margin-right: 20px;
@@ -98,11 +100,19 @@
   width: 100%;
   height: 100%;
   transition: all 1s ease-out;
+  border-radius: 10px;
 }
 .list img:hover {
   transform: scale(1.2);
   transform-origin: center;
 }
-.popo{
+.popo {
   text-decoration: line-through;
+}
+.shop_lists h2 {
+  /* background-color:red; */
+  font-weight: 100;
+}
+a {
+  text-decoration: none;
 }

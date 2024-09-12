@@ -84,30 +84,38 @@
   border-radius: 5px;
 }
 .nav-chain {
-  /* display: none; */
+  display: none;
+  position: absolute;
+
+}
+.nav-logo.blocked{
+  display: none;
+}
+.humberger.blocked{
+  display: block;
 }
 
 @media (max-width: 800px) {
   .nav-main {
     /* background:red; */
-    display: none;
+    display: flex;
   }
   .nav-menu {
-    /* display: none; */
+    display: none;
     /* background:red; */
   }
   .humberger {
-    /* display: flex; */
+    display: flex;
   }
   .basketbal {
     display: none;
   }
   .nav-chain {
-    background-color: #ff4955;
+    /* background-color: #ff4955; */
     display: flex;
-    position: absolute;
-    top: 10px;
-    left: 0;
+
+    top: 3vw;
+    left: -100%;
     width: 100vw;
     /* height: 10px; */
     color: aliceblue;
@@ -115,6 +123,10 @@
     align-items: center;
     z-index: 100;
     font-family: "Kaushan Script", cursive;
+    transition: 1s all;
+  }
+  .nav-chain.open{
+    left: 0;
   }
   .nav-chain a {
     text-decoration: none;
