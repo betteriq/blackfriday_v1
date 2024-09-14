@@ -1,6 +1,7 @@
 import React from "react";
 import "./Contact.css";
 import Nav from "../../Navbar/Nav";
+import Footers from "../../footer/Footers";
 
 function Contact() {
   return (
@@ -25,19 +26,28 @@ function Contact() {
           </p>
           <div className="cantact_input_p1_index">
             <div>
-              <h3><i class='fas fa-map-marker'></i>
-               ADDRESS</h3>
+              <h3>
+                <i class="fas fa-map-marker" style={{ color: "#fc3746" }}>
+                  &nbsp;
+                </i>
+                ADDRESS : 2972 Westheimer Rd. Santa Ana, Illinois 85486
+
+              </h3>
             </div>
             <hr style={{ color: "#ffffff", width: "100vw", margin: 0 }} />
 
             <div>
-              <h3><i class='fas fa-phone-volume'></i>
-  <section></section>              PHONE</h3>
+              <h3>
+                <i class="fas fa-phone-volume" style={{ color: "#fc3746" }}></i>
+                &nbsp;PHONE : (405) 555-0128
+              </h3>
             </div>
             <hr style={{ color: "#ffffff", width: "100vw", margin: 0 }} />
-
             <div>
-              <h3>EMAIL</h3>
+              <h3>
+                <i class="fa fa-envelope" style={{ color: "#fc3746" }}></i>
+                &nbsp;EMAIL : hello@example.com
+              </h3>
             </div>
           </div>
         </div>
@@ -56,6 +66,7 @@ function Contact() {
           </div>
         </form>
       </div>
+      <Footers />
     </div>
   );
 }
