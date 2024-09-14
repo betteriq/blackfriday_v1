@@ -23,11 +23,16 @@
   margin: 10px;
 }
 .box p {
-  font-size: 4vw;
+  font-size: 1.5vw;
+  text-transform: uppercase;
 }
 h1 {
   font-size: 10px;
 }
-h3{
-  display: no;
+.box h3{
+  font-family: "League Gothic", sans-serif;
+font-weight: 100;
+  font-size: 10vw;
+  padding: 0;
+  margin: 0;
 }

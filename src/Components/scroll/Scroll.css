@@ -11,7 +11,10 @@
   color: aliceblue;
   border: none;
   cursor: pointer;
+  transition: all 1s;
 }
 .scroll-to-top button:hover {
+  transition: all 1s;
+  border: 1px white solid;
   background-color: blueviolet;
 }

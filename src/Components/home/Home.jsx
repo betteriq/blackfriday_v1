@@ -32,6 +32,7 @@ function Home() {
       <Tempthree />
       <Tempfour />
       <Temp_five />
+      <Footers/>
     </div>
   );
 }

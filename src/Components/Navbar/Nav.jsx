@@ -12,22 +12,24 @@ function Nav() {
   const setty = () => {
     setClicked(!clicked);
   };
-  const sery=()=>{
-    setBlocked(!blocked)
-  }
+  const sery = () => {
+    setBlocked(!blocked);
+  };
   useEffect(() => {
     sery();
-    console.log("llll :" ,blocked);
+    console.log("llll :", blocked);
   }, [clicked]);
   console.log("clicked is : ", clicked);
   return (
     <div className="nav-container">
       <div className="nav-main">
-        <img
-          src={logo}
-          alt=""
-          className={`nav-logo ${blocked ? "blocked" : ""}`}
-        />
+        <Link to="/">
+          <img
+            src={logo}
+            alt=""
+            className={`nav-logo ${blocked ? "blocked" : ""}`}
+          />
+        </Link>
         <div className="nav-menu">
           <Link to="/" className="p_p">
             home
@@ -42,7 +44,10 @@ function Nav() {
             contact
           </Link>
         </div>
-        <div className={`humberger ${blocked ? "blocked" : ""}`} onClick={setty}>
+        <div
+          className={`humberger ${blocked ? "blocked" : ""}`}
+          onClick={setty}
+        >
           <span></span>
           <span></span>
           <span></span>
